@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Vidit.</a>
+
+        <nav class="navbar">
+            <a target="_self" href="index.html">Home</a>
+            <a target="_self" href="#">TechStack</a>
+            <a target="_self" href="#">Projects</a>
+        </nav>
+
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hello, I am Vidit</h1>
+            <h3 id="designation"></h3>
+            <p><i>"Crafting digital experiences that inspire and engage, turning visions into vibrant realities"</i></p>
+            <div class="btn-box">
+                <a href="#">Hire Me </a>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <img src="Media Assets/linkedin.png">
+                <h3>LinkedIn</h3>
+                <p>Let's link up and stay connected on LinkedIn</p>
+                <a id="linkedin" href="https://www.linkedin.com/in/vidit-sood-69236822a">Connect</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <img src="Media Assets/github.png">
+                <h3>GitHub</h3>
+                <p>Ready to push boundaries and pull requests on GitHub?</p>
+                <a id="git" href="https://github.com/beastvv">Follow</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <img src="Media Assets/instagram.png">
+                <h3>Instagram</h3>
+                <p>Discover more about my journey and work on Instagram</p>
+                <a id="insta" href="https://www.instagram.com/sood.vidit?igsh=MWlkbjVpNmlwZXl5MQ==">Follow Me</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="about-content">
+        <h3>About Me</h3>
+        <p>Hi, I'm Vidit Sood, a Computer Science Engineering student at Manipal University Jaipur. I'm passionate about
+            staying physically active and maintaining a healthy lifestyle, with a focus on gym workouts. I'm also keenly
+            interested in technology and always eager to learn about the latest advancements in the field. I believe my
+            strong work ethic, passion for fitness, and technical skills will enable me to make meaningful contributions
+            in my chosen field.</p>
+    </div>
+
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,}
+        );  
+    </script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script>
+        var app = document.getElementById('designation');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+
+        typewriter.typeString('Web Developer')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Full Stack Developer')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('UI/UX Designer')
+            .pauseFor(2000)
+            .deleteAll()
+            .start();
+    </script>
+</body>
+
+</html>
