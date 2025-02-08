@@ -7,20 +7,20 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Vidit.</a>
-
         <nav class="navbar">
-            <a target="_self" href="index.html">Home</a>
-            <a target="_self" href="#">TechStack</a>
+            <a target="_self" id="home-link" >Home</a>
+            <a target="_self" id="techstack-link" >TechStack</a>
             <a target="_self" href="#">Projects</a>
+            <a target="_self" id="contact-link">Contact</a>
+            <a target="_self" id="about-link">About</a>
         </nav>
-
     </header>
+    
     <section class="home">
         <div class="home-content">
             <h1>Hello, I am Vidit</h1>
             <h3 id="designation"></h3>
-            <p><i>"Crafting digital experiences that inspire and engage, <br>turning visions into vibrant realities"</i></p>
+            <p><i>"Crafting digital experiences that inspire and engage, turning visions into vibrant realities"</i></p>
             <div class="btn-box">
                 <a href="#">Hire Me </a>
                 <a href="#">Let's Talk</a>
@@ -28,7 +28,37 @@
         </div>
     </section>
 
-    <div class="container">
+    <section class="techstack" id="techstack" >
+        <div class="tech-icons">
+            <div class="tech-card, card">
+                <img src="Media Assets/html.png" alt="HTML5">
+            </div>
+            <div class="tech-card , card">
+                <img src="Media Assets/css.png" alt="CSS3">
+                
+            </div>
+            <div class="tech-card , card">
+                <img src="Media Assets/js.png" alt="JavaScript">
+                
+            </div>
+            <div class="tech-card , card">
+                <img src="Media Assets/mongodb.png" alt="Mongodb">
+            </div>
+            <div class="tech-card , card">
+                <img src="Media Assets/express.png" alt="Express">
+            </div>
+            <div class="tech-card , card">
+                <img src="Media Assets/react.png" alt="React">
+                
+            </div>
+            <div class="tech-card , card">
+                <img src="Media Assets/nodejs.png" alt="Node.js">
+                
+            </div>
+        </div>
+    </section></div>
+
+    <div id="contact" class="container">
         <div class="card">
             <div class="content">
                 <img src="Media Assets/linkedin.png">
@@ -43,7 +73,7 @@
                 <img src="Media Assets/github.png">
                 <h3>GitHub</h3>
                 <p>Ready to push boundaries and pull requests on GitHub?</p>
-                <a id="git" href="https://github.com/sood-vidit">Follow</a>
+                <a id="git" href="https://github.com/beastvv">Follow</a>
             </div>
         </div>
         <div class="card">
@@ -56,24 +86,25 @@
         </div>
 
     </div>
-    <div class="about-content">
+    <div id="about" class="about-content">
         <h3>About Me</h3>
         <p>Hi, I'm Vidit Sood, a Computer Science Engineering student at Manipal University Jaipur. I'm passionate about
-            staying physically active and maintaining a healthy lifestyle. I'm keenly
+            staying physically active and maintaining a healthy lifestyle, with a focus on gym workouts. I'm also keenly
             interested in technology and always eager to learn about the latest advancements in the field. I believe my
-            strong work ethic and technical skills will enable me to make meaningful contributions
+            strong work ethic, passion for fitness, and technical skills will enable me to make meaningful contributions
             in my chosen field.</p>
     </div>
 
-<!-- The script below is not mine and all credits goes to the original creator -->
+
 
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>VanillaTilt.init(document.querySelectorAll(".card"), {
             max: 25,
             speed: 400,
-            glare: true,
+            glare: false,
             "max-glare": 1,}
         );  
+        
     </script>
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -96,6 +127,7 @@
             .deleteAll()
             .start();
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
